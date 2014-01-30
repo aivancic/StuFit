@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txtVrstaJela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtUnesiVrstuJela"
+        android:layout_alignBottom="@+id/edtUnesiVrstuJela"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txtVrstaJela"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtNazivJela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edtUnesiVrstuJela"
+        android:layout_marginTop="17dp"
+        android:text="@string/txtNazivJela"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtProteini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtUgljikohidrati"
+        android:layout_below="@+id/edtUnesiVrstuJela"
+        android:layout_marginTop="69dp"
+        android:text="@string/txtProteini"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtProteini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtProteini"
+        android:layout_alignBottom="@+id/txtProteini"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="26dp"
+        android:layout_toRightOf="@+id/txtProteini"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtUnesiVrstuJela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtUnesiNazivJela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNazivJela"
+        android:layout_alignBottom="@+id/txtNazivJela"
+        android:layout_alignLeft="@+id/edtUnesiVrstuJela"
+        android:ems="10"
+        android:inputType="text" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtMasti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtProteini"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/edtProteini"
+        android:text="@string/txtMasti"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtMasti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMasti"
+        android:layout_alignBottom="@+id/txtMasti"
+        android:layout_alignLeft="@+id/edtProteini"
+        android:layout_alignRight="@+id/edtProteini"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtUgljikohidrati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtMasti"
+        android:layout_alignRight="@+id/edtMasti"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtUgljikohidrati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/txtUgljikohidrati"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtKalorije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtKalorije"
+        android:layout_alignBottom="@+id/txtKalorije"
+        android:layout_alignLeft="@+id/edtUgljikohidrati"
+        android:layout_alignRight="@+id/edtUgljikohidrati"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtKolicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtUgljikohidrati"
+        android:layout_below="@+id/edtUgljikohidrati"
+        android:layout_marginTop="72dp"
+        android:text="@string/txtKolicina"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtKolicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtKolicina"
+        android:layout_alignBottom="@+id/txtKolicina"
+        android:layout_alignLeft="@+id/edtUgljikohidrati"
+        android:layout_alignRight="@+id/edtKalorije"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtKalorije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUgljikohidrati"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/edtProteini"
+        android:text="@string/txtKalorije"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSpremiJelo"
+        android:onClick="onSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtKolicina"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnSpremiJelo"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSpremiJeloNazad"
+        android:onClick="onCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSpremiJelo"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnSpremiJelo"
+        android:layout_toRightOf="@+id/btnSpremiJelo"
+        android:text="@string/btnSpremiJeloNazad"
+        android:textSize="20sp" />
+
+</RelativeLayout>

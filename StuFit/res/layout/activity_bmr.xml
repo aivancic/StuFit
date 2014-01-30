@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txtActivityBMRTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtActivityBMRTitle"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtActivityBMRTitle"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtActivityBMRgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtActivityBMRgender"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+        <RadioButton
+            android:id="@+id/rbBMRMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbBMRMale" />
+
+        <RadioButton
+            android:id="@+id/rbBMRFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbBMRFemale" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtBMIstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtActivityBMIResult"
+        android:ems="10"
+        android:hint="@string/txtStatusHint" />
+
+    <EditText
+        android:id="@+id/txtActivityBMRResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtBMIstatus"
+        android:ems="10"
+        android:hint="@string/txtActivityBMRHint" />
+
+    <TextView
+        android:id="@+id/txtviewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtActivityBMRResult"
+        android:layout_alignBottom="@+id/txtActivityBMRResult"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtActivityBMRResult"
+        android:text="@string/txtActivityStatus"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txtTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/txtTipsHint" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtActivityBMIResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBMRCalculate"
+        android:ems="10"
+        android:hint="@string/txtActivityBMIHint" />
+
+    <EditText
+        android:id="@+id/txtInputAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtActivityBMRAge"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/txtActivityBMRAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtInputWeight"
+        android:text="@string/txtActivityBMRAge"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtviewBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBMIstatus"
+        android:layout_alignBottom="@+id/txtBMIstatus"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtBMIstatus"
+        android:text="@string/txtActivityBMIState"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtActivityBMRWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtInputHeight"
+        android:text="@string/txtActivityBMRWeight"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtActivityBMRHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="23dp"
+        android:text="@string/txtActivityBMRHeight"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btnBMRTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/txtTip"
+        android:text="@string/btnBMRTips"
+        android:width="120dp" />
+
+    <TextView
+        android:id="@+id/txtviewBMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtActivityBMIResult"
+        android:layout_alignBottom="@+id/txtActivityBMIResult"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txtActivityBMRState"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txtInputWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtActivityBMRWeight"
+        android:layout_toRightOf="@+id/txtviewBMI"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtInputHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtActivityBMRHeight"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnBMRCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtInputAge"
+        android:layout_toRightOf="@+id/txtviewBMI"
+        android:text="@string/btnBMRCalculate"
+        android:textAlignment="center"
+        android:width="120dp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StuFit</string>
+    <string name="action_settings">Svojstva</string>
+    <string name="btnBodyFatActivity">Indeks tjelesne mase</string>
+    <string name="txtActivityBodyFatTitle">Tjelesna masnoća</string>
+    <string name="txtActivityBodyFatWeight">Masa</string>
+
+    <string name="btnBMRActivity">Stopa bazičnog metabolizma</string>
+    <string name="txtActivityBMRTitle">bmr</string>
+    <string name="txtActivityBMRHeight">Visina</string>
+    <string name="txtActivityBMRWeight">Masa</string>
+    <string name="txtActivityBMRAge">Godine</string>
+    <string name="txtActivityBMRHint">Stanje BMR</string>
+	<string name="btnBMRCalculate">Izračunaj</string>
+	<string name="txtActivityBMRgender">Spol</string>
+	<string name="rbBMRMale">muško</string>
+	<string name="rbBMRFemale">žensko</string>
+	<string name="txtActivityBMIHint">Stanje BMI</string>
+	<string name="btnBMRTips">Napomena</string>
+	<string name="txtTipsHint">Savjeti</string>
+	<string name="txtStatusHint">Status</string>
+	
+	<string name="txtActivityBMRState">BMR</string>
+	<string name="txtActivityBMIState">BMI</string>
+	<string name="txtActivityStatus">Status</string>
+	
+	
+	
+	<string name="btnPregledUnosJela">Pregled i unos jela</string>
+	<string name="txtVrstaJela">Vrsta jela: </string>
+	<string name="txtNazivJela">Naziv jela: </string>
+	<string name="txtProteini">Proteini (g): </string>
+	<string name="txtMasti">Masti (g): </string>
+	<string name="txtUgljikohidrati">Ugljikohidrati (g): </string>
+	<string name="txtKalorije">Kalorije: </string>
+	<string name="txtKolicina">Količina (g): </string>
+	
+	<string name="btnSpremiJelo">Spremi</string>
+	<string name="btnSpremiJeloNazad">Nazad</string>
+	
+	<string name="btnDodajNovoJelo">Dodaj novo jelo</string>
+	<string name="txtPregledNaslov">Popis jela</string>
+	
+	
+</resources>
